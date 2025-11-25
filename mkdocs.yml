@@ -1,119 +1,57 @@
-# Site Information
-site_name: Your Name - MDEF Portfolio
-site_description: My Master in Design for Emergent Futures journey
+site_name: Aishwarya Kaura - MDEF
+site_description: My Design Journey
 site_author: Aishwarya Kaura
-copyright: Copyright &copy; 2025 Aishwarya Kaura
-site_url: https://YOUR-USERNAME.github.io/your-repo-name/
-repo_name: "made-portfolio"
-repo_url: "https://github.com/fablabbcn/mdef-template"
+copyright: Copyright &copy; 2024 Aishwarya Kaura
+repo_name: mdef-portfolio
+repo_url: https://github.com/aishwaryakaura/mdef-portfolio
 
-# Navigation Structure
 nav:
   - Home: index.md
   - About: about/me.md
   - Term 1:
-      - Landing: term1/landing/week01.md
       - Design Studio: term1/design/week01.md
   - Term 2:
       - Landing: term2/landing/week01.md
   - Term 3:
       - Landing: term3/landing/week01.md
-  - Reflections: reflections.md
 
-# Theme Configuration
 theme:
   name: material
   palette:
-    # Light mode
     - scheme: default
-      primary: indigo        # Change this color!
-      accent: indigo         # Change this color!
+      primary: Green
+      accent: Baby Blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - scheme: slate
-      primary: indigo        # Change this color!
-      accent: indigo         # Change this color!
+      primary: Green
+      accent: Baby Blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   
   font:
-    text: Roboto           # Main text font
-    code: Roboto Mono      # Code font
-  
-  logo: images/mdef-logo.png    # Your logo
-  favicon: images/favicon.svg    # Browser tab icon
+    text: Roboto
+    code: Roboto Mono
   
   features:
-    - announce.dismiss
-    - content.code.annotate
-    - content.code.copy
-    - content.tooltips
-    - navigation.footer
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs        # Tabs at the top!
-    - navigation.tabs.sticky # Tabs stay visible when scrolling
-    - navigation.top         # "Back to top" button
-    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
     - search.highlight
-    - search.share
     - search.suggest
-    - toc.follow
 
-  icon:
-    repo: fontawesome/brands/github
-
-# Extensions
 markdown_extensions:
-  - extra
-  - smarty
-  - admonition              # Call-out boxes
-  - pymdownx.details        # Collapsible sections
-  - pymdownx.superfences    # Code blocks
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.arithmatex:
-      generic: true
+  - md_in_html
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
 
-# Plugins
 plugins:
   - search
   - git-revision-date-localized:
-      fallback_to_build_date: true
-
-# Extra CSS (for custom styling)
-extra_css:
-  - assets/other/custom.css
-
-# Social Links (bottom of page)
-extra:
-  social:
-    - icon: fontawesome/brands/instagram
-      link: "https://instagram.com/aishwarya.kaura"
-    - icon: fontawesome/brands/github
-      link: "https://github.com/aishwaryakaura"
-    - icon: fontawesome/brands/linkedin
-      link: "https://linkedin.com/in/aishwarya-kaura-146b5b77/"
+      enable_creation_date: true
 ```
-
-**IMPORTANT:** Replace these:
-- `Your Name` → your actual name
-- `YOUR-USERNAME` → your GitHub username
-- `your-repo-name` → your repository name
-- Social media links → your actual links (or remove them)
