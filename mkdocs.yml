@@ -1,4 +1,4 @@
-site_name: Aishwarya Kaura - MDEF
+site_name: Aishwarya Kaura
 site_description: My Design Journey
 site_author: Aishwarya Kaura
 copyright: Copyright &copy; 2024 Aishwarya Kaura
@@ -20,13 +20,13 @@ theme:
   palette:
     - scheme: default
       primary: green
-      accent: light blue
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       primary: green
-      accent: light blue
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
