@@ -1,80 +1,78 @@
-# Replace the text below to customize your site
-site_name: Student Name - MDEF & Fab Lab Barcelona
-site_description: Master in Design for Emergent Futures
-site_author: Student Name
-copyright: Copyleft 2025 "Aishwarya Kaura" - GNU Free Documentation License
-repo_name: 'Name : Github Repo'
-site_url: https://fablabbcn.github.io/mdef-template/
-repo_url: 'https://github.com/fablabbcn/mdef-template'
+# Site Information
+site_name: Your Name - MDEF Portfolio
+site_description: My Master in Design for Emergent Futures journey
+site_author: Aishwarya Kaura
+copyright: Copyright &copy; 2025 Aishwarya Kaura
+site_url: https://YOUR-USERNAME.github.io/your-repo-name/
+repo_name: "made-portfolio"
+repo_url: "https://github.com/fablabbcn/mdef-template"
 
-
+# Navigation Structure
 nav:
   - Home: index.md
   - About: about/me.md
-  - Master project:
-      - Initial ideas: project/project.md
-  - Reflections :
-      - Term 1:
-          - Bootcamp: term1/01-Bootcamp.md
-          - AoWS: term1/02-Atlas of Weak Signals.md
+  - Term 1:
+      - Landing: term1/landing/week01.md
+      - Design Studio: term1/design/week01.md
+  - Term 2:
+      - Landing: term2/landing/week01.md
+  - Term 3:
+      - Landing: term3/landing/week01.md
+  - Reflections: reflections.md
 
-      - Term 2:
-          - digi: term1/01-Bootcamp.md
-          - studio: term1/01-Bootcamp.md
-
-
-
-
-extra:
-  social:
-    # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/
-    - icon: fontawesome/brands/linkedin
-      link: "https://www.linkedin.com/in/"
-    - icon: fontawesome/brands/github
-      link: "https://github.com/"
-
+# Theme Configuration
 theme:
   name: material
   palette:
-    # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
-    primary: Green
-    accent: baby blue
+    # Light mode
+    - scheme: default
+      primary: indigo        # Change this color!
+      accent: indigo         # Change this color!
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo        # Change this color!
+      accent: indigo         # Change this color!
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
   font:
-    # See available fonts at https://fonts.google.com/
-    text: Be Vietnam
-    code: Cutive Mono
-  icon:
-    logo: material/memory
-  favicon: images/favicon.svg
+    text: Roboto           # Main text font
+    code: Roboto Mono      # Code font
+  
+  logo: images/mdef-logo.png    # Your logo
+  favicon: images/favicon.svg    # Browser tab icon
+  
   features:
-    - instant
-    - navigation.expand
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
     - navigation.indexes
-    - navigation.instant
-    # - navigation.prune
-    # - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
+    - navigation.sections
+    - navigation.tabs        # Tabs at the top!
+    - navigation.tabs.sticky # Tabs stay visible when scrolling
+    - navigation.top         # "Back to top" button
     - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
 
-plugins:
-  - search
-  - git-revision-date-localized:
-      fallback_to_build_date: true
+  icon:
+    repo: fontawesome/brands/github
 
+# Extensions
 markdown_extensions:
   - extra
   - smarty
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+  - admonition              # Call-out boxes
+  - pymdownx.details        # Collapsible sections
+  - pymdownx.superfences    # Code blocks
   - codehilite:
       guess_lang: false
   - toc:
@@ -82,34 +80,40 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-
-  - md_in_html
-  - admonition
-  - codehilite
-  - footnotes
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      base_path: 'docs'
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
 
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+# Extra CSS (for custom styling)
 extra_css:
-  - stylesheets/extra.css
-  - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css
+  - assets/other/custom.css
+
+# Social Links (bottom of page)
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: "https://instagram.com/aishwarya.kaura"
+    - icon: fontawesome/brands/github
+      link: "https://github.com/aishwaryakaura"
+    - icon: fontawesome/brands/linkedin
+      link: "https://linkedin.com/in/aishwarya-kaura-146b5b77/"
+```
+
+**IMPORTANT:** Replace these:
+- `Your Name` → your actual name
+- `YOUR-USERNAME` → your GitHub username
+- `your-repo-name` → your repository name
+- Social media links → your actual links (or remove them)
