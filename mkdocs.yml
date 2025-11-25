@@ -19,14 +19,14 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: Green
-      accent: Baby Blue
+      primary: green
+      accent: light blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: Green
-      accent: Baby Blue
+      primary: green
+      accent: light blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -54,4 +54,3 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
-```
