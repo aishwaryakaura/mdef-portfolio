@@ -2,7 +2,7 @@
 site_name: Student Name - MDEF & Fab Lab Barcelona
 site_description: Master in Design for Emergent Futures
 site_author: Student Name
-copyright: Copyleft 2023 "Student Name" - GNU Free Documentation License
+copyright: Copyleft 2025 "Aishwarya Kaura" - GNU Free Documentation License
 repo_name: 'Name : Github Repo'
 site_url: https://fablabbcn.github.io/mdef-template/
 repo_url: 'https://github.com/fablabbcn/mdef-template'
@@ -43,8 +43,8 @@ theme:
   name: material
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
-    primary: blue
-    accent: purple
+    primary: Green
+    accent: baby blue
   font:
     # See available fonts at https://fonts.google.com/
     text: Be Vietnam
