@@ -1,4 +1,4 @@
-site_name: Aishwarya Kaura
+site_name: Aishwarya Kaura - MDEF
 site_description: My Design Journey
 site_author: Aishwarya Kaura
 copyright: Copyright &copy; 2024 Aishwarya Kaura
@@ -8,25 +8,22 @@ repo_url: https://github.com/aishwaryakaura/mdef-portfolio
 nav:
   - Home: index.md
   - About: about/me.md
-  - Term 1:
-      - Design Studio: term1/design/week01.md
-  - Term 2:
-      - Landing: term2/landing/week01.md
-  - Term 3:
-      - Landing: term3/landing/week01.md
+  - Term 1: term1/design/week01.md
+  - Term 2: term2/landing/week01.md
+  - Term 3: term3/landing/week01.md
 
 theme:
   name: material
   palette:
     - scheme: default
       primary: green
-      accent: green
+      accent: light blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       primary: green
-      accent: green
+      accent: light blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
