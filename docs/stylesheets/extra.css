@@ -1,5 +1,4 @@
 :root>* {
-
     --md-footer-bg-color: white;
     --md-footer-fg-color: rgb(32, 32, 32);
     --md-footer-bg-color--dark: white;
@@ -8,28 +7,27 @@
     --mdc-typography-headline6-font-family: 'Be Vietnam', sans-serif;
     --mdc-typography-font-family: 'Be Vietnam', sans-serif;
     --md-typeset-a-color: rgb(12, 240, 190);
-
 }
-
 
 .hide-scroll-bar {
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-  .hide-scroll-bar::-webkit-scrollbar {
-    display: none;
-  }
+}
 
-  .md-typeset .md-button--primary {
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.md-typeset .md-button--primary {
     border-width: 1px;
     border-color: rgb(219, 219, 219);
     border-radius: 4px;
-  }
+}
 
 .cardContent {
-  padding: 16px;
-  font-size: 16px;
-  color: rgb(32, 32, 32);
+    padding: 16px;
+    font-size: 16px;
+    color: rgb(32, 32, 32);
 }
 
 .md-typeset h2 {
@@ -39,4 +37,14 @@
 .mdc-typography--body2 {
     font-weight: 300;
     font-size: 14px;
+}
+
+/* Hide left sidebar */
+.md-sidebar--primary {
+    display: none;
+}
+
+.md-content {
+    margin-left: 0 !important;
+    max-width: 100% !important;
 }
