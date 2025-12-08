@@ -1,5 +1,3 @@
-INHERIT: null
-
 site_name: Aishwarya Kaura - MDEF
 site_description: My Design Journey
 site_author: Aishwarya Kaura
@@ -58,4 +56,3 @@ plugins:
 
 extra_css:
   - stylesheet/extra.css
-```
