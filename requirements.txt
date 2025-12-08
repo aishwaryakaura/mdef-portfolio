@@ -1,4 +1,4 @@
-mkdocs
-mkdocs-material>=9.0
+mkdocs>=1.5
+mkdocs-material>=9.5
 mkdocs-material-extensions
 mkdocs-git-revision-date-localized-plugin
