@@ -8,9 +8,12 @@ repo_url: https://github.com/aishwaryakaura/mdef-portfolio
 nav:
   - Home: index.md
   - About: about/me.md
-  - Term 1: term1/design/week01.md
-  - Term 2: term2/landing/week01.md
-  - Term 3: term3/landing/week01.md
+  - Term 1:
+      - term1/design/week01.md
+  - Term 2:
+      - term2/landing/week01.md
+  - Term 3:
+      - term3/landing/week01.md
 
 theme:
   name: material
@@ -36,6 +39,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
     - search.highlight
     - search.suggest
 
