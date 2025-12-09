@@ -41,7 +41,7 @@
 
 /* Hide left sidebar */
 .md-sidebar--primary {
-    display: none;
+    display: none !important;
 }
 
 .md-content {
