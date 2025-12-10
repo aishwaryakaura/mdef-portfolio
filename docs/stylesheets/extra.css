@@ -2,8 +2,8 @@
     --md-footer-bg-color: white;
     --md-footer-fg-color: rgb(32, 32, 32);
     --md-footer-bg-color--dark: white;
-    --md-footer-fg-color--lighter:  rgb(32, 32, 32);
-    --md-footer-fg-color--light:  rgb(32, 32, 32);
+    --md-footer-fg-color--lighter: rgb(32, 32, 32);
+    --md-footer-fg-color--light: rgb(32, 32, 32);
     --mdc-typography-headline6-font-family: 'Be Vietnam', sans-serif;
     --mdc-typography-font-family: 'Be Vietnam', sans-serif;
     --md-typeset-a-color: rgb(12, 240, 190);
@@ -39,12 +39,25 @@
     font-size: 14px;
 }
 
-/* Hide left sidebar */
+/* FORCE HIDE LEFT SIDEBAR */
+[data-md-component="sidebar"][data-md-type="navigation"] {
+    display: none !important;
+}
+
 .md-sidebar--primary {
     display: none !important;
+    width: 0 !important;
+}
+
+.md-container {
+    margin-left: 0 !important;
 }
 
 .md-content {
     margin-left: 0 !important;
+    max-width: 100% !important;
+}
+
+.md-grid {
     max-width: 100% !important;
 }

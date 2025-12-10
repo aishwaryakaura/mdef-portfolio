@@ -55,4 +55,4 @@ plugins:
       enable_creation_date: true
 
 extra_css:
-  - stylesheet/extra.css
+  - stylesheets/extra.css
