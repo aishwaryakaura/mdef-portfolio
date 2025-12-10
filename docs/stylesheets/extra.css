@@ -39,18 +39,9 @@
     font-size: 14px;
 }
 
-/* FORCE HIDE LEFT SIDEBAR */
-[data-md-component="sidebar"][data-md-type="navigation"] {
+/* HIDE LEFT SIDEBAR ON ALL PAGES */
+.md-sidebar.md-sidebar--primary {
     display: none !important;
-}
-
-.md-sidebar--primary {
-    display: none !important;
-    width: 0 !important;
-}
-
-.md-container {
-    margin-left: 0 !important;
 }
 
 .md-content {
@@ -58,6 +49,12 @@
     max-width: 100% !important;
 }
 
-.md-grid {
-    max-width: 100% !important;
+.md-main__inner {
+    margin-left: 0 !important;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none !important;
+    }
 }
