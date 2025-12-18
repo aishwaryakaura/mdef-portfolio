@@ -1,8 +1,45 @@
----
-hide:
-    - toc
----
+# PROJECTS
 
-# Initial ideas
+<div class="project-grid" markdown>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="project-card" markdown>
+[![](../../images/project1.png)](project1.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project2.png)](project2.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project3.png)](project3.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project4.png)](project4.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project5.png)](project5.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project6.png)](project6.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project7.png)](project7.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project8.png)](project8.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project9.png)](project9.md)
+</div>
+
+<div class="project-card" markdown>
+[![](../../images/project10.png)](project10.md)
+</div>
+
+</div>
