@@ -7,12 +7,32 @@ repo_url: https://github.com/aishwaryakaura/mdef-portfolio
 
 nav:
   - Home: index.md
-  - About: about/me.md
+  - About: 
+    - Me: about/me.md
   - Projects: projects.md
   - Reflections: reflections.md
 
+# Add this to control how page titles are displayed
+use_directory_urls: true
+nav_title: ""
+
 theme:
   name: material
+  # Add this to hide the site name in the header if needed
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - navigation.indexes  # This helps with folder navigation
+    # Hide the site name in header if it's appearing
+    # - header.autohide  # Uncomment if needed
+
+  # Optional: Customize the navigation style
+  navigation_depth: 2
+  
   palette:
     - scheme: default
       primary: green
@@ -30,14 +50,6 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - search.highlight
-    - search.suggest
-    - toc.integrate
 
 markdown_extensions:
   - attr_list
@@ -46,6 +58,8 @@ markdown_extensions:
   - codehilite
   - pymdownx.superfences
   - pymdownx.details
+  # Add this extension for better title control
+  - meta
 
 plugins:
   - search
