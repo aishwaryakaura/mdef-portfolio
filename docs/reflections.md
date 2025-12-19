@@ -8,23 +8,23 @@ hide:
 <div class="project-grid" markdown>
 
 <div class="project-card" markdown>
-[![](images/project1.png)](reflections/unpackingreflection/)
+[![](images/project1.png)](reflections/unpackingreflection.md)
 </div>
 
 <div class="project-card" markdown>
-[![](images/project2.png)](reflections/Project_Studio_1/)
+[![](images/project2.png)](reflections/Project_Studio_1.md)
 </div>
 
 <div class="project-card" markdown>
-[![](images/project3.png)](reflections/projectR3/)
+[![](images/project3.png)](reflections/projectR3)
 </div>
 
 <div class="project-card" markdown>
-[![](images/project4.png)](reflections/projectR4/)
+[![](images/project4.png)](reflections/projectR4)
 </div>
 
 <div class="project-card" markdown>
-[![](images/project5.png)](reflections/projectR5/)
+[![](images/project5.png)](reflections/projectR5)
 </div>
 
 <div class="project-card" markdown>
