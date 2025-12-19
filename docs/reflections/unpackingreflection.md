@@ -1,5 +1,5 @@
 # Unpacking Tech Reflection
 
-![Process Documentation](../images/UT_Reflection-1.png)
-![Animated Process](../images/UT_Reflection-1.gif)
-![Detailed View](../images/UT_Reflection-2-1.png)
+![Process Documentation](/Users/aishwaryakaura/Documents/mdef-template/docs/images/images/REFLEXION /UT_Reflection.png)
+![Animated Process](/Users/aishwaryakaura/Documents/mdef-template/docs/images/images/REFLEXION /UT_Reflection.gif)
+![Detailed View](/Users/aishwaryakaura/Documents/mdef-template/docs/images/images/REFLEXION /UT_Reflection2.png)
