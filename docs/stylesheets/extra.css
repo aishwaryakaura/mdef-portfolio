@@ -9,29 +9,60 @@
     --md-typeset-a-color: rgb(12, 240, 190);
 }
 
-/* FIX 1: Make ALL images full width and height auto */
-img {
+/* ====== IMAGE FIXES ====== */
+
+/* 1. Make REGULAR images full width (outside project grid) */
+img:not(.project-card img) {
     width: 100% !important;
     height: auto !important;
     max-width: 100% !important;
     display: block !important;
+    margin: 1rem auto !important;
 }
 
-/* Also target Material theme's image styling */
-.md-typeset img {
+/* 2. Also target Material theme's image styling for regular images */
+.md-typeset img:not(.project-card img) {
     width: 100% !important;
     height: auto !important;
     max-width: 100% !important;
-    display: block !important;
 }
 
-/* Make project card images maintain their aspect ratio */
+/* 3. FIX PROJECT CARD IMAGES - keep them as squares */
 .md-typeset .project-card img {
     width: 100% !important;
-    height: 100% !important; /* Keep this for project grid images only */
+    height: 100% !important; /* This makes them square */
     object-fit: cover !important;
+    object-position: center !important;
     display: block !important;
     margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* 4. Ensure the project card container is square */
+.md-typeset .project-card {
+    aspect-ratio: 1 !important; /* Makes container square */
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+/* ====== HEADING FIXES ====== */
+/* Hide auto-generated titles but keep custom ones */
+.md-typeset h1:first-of-type:not(.custom-title) {
+    display: none !important;
+}
+
+/* Style your custom title */
+h1.custom-title {
+    display: block !important;
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    color: #2d5f4f !important;
+    margin-bottom: 2rem !important;
+    letter-spacing: 0.05em !important;
 }
 
 .hide-scroll-bar {
@@ -94,15 +125,6 @@ img {
     list-style: none !important;
 }
 
-.md-typeset .project-card {
-    aspect-ratio: 1 !important;
-    overflow: hidden !important;
-    border-radius: 0 !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 .md-typeset .project-card:hover {
     transform: scale(1.05) !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
@@ -115,6 +137,7 @@ img {
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    text-decoration: none !important;
 }
 
 .md-typeset .project-card p {
@@ -141,29 +164,16 @@ img {
     }
 }
 
-/* Big PROJECTS title styling */
-.md-typeset h1 {
-    font-size: 4rem !important;
-    font-weight: 700 !important;
-    color: #2d5f4f !important;
-    margin-bottom: 2rem !important;
-    letter-spacing: 0.05em !important;
+/* ====== ADDITIONAL FIX FOR EMBEDDED IMAGES ====== */
+/* If you have images inside project pages that should be full width */
+.project-content img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
 }
 
-/* FIX 2: Remove auto-generated titles from content */
-/* This hides page titles that might be coming from folder names */
-.md-typeset h1:first-of-type {
-    /* If you want to hide the first h1 (usually auto-generated title) */
-    /* display: none !important; */
-}
-
-/* Alternative: If you want to hide ALL h1 elements except your custom ones */
-/* Add a class to your manual h1 tags in markdown like # My Title {.custom-title} */
-h1:not(.custom-title) {
-    display: none !important;
-}
-
-/* Center images by default */
-img:not(.project-card img) {
-    margin: 1rem auto !important;
+/* Clear any inherited styles */
+.md-typeset .project-card,
+.md-typeset .project-card * {
+    box-sizing: border-box !important;
 }
