@@ -8,7 +8,7 @@ hide:
 <div class="project-grid" markdown>
 
 <div class="project-card" markdown>
-[![](images/project1.png)](project/Project1_Unpacking Tech.md)
+[![](images/project1.png)](/Users/aishwaryakaura/Documents/mdef-template/docs/project/Project1_Unpacking Tech.md)
 </div>
 
 <div class="project-card" markdown>
