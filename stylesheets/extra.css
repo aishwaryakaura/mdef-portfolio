@@ -1,0 +1,183 @@
+/* ====== CUSTOM PROPERTIES ====== */
+:root>* {
+    --md-footer-bg-color: white;
+    --md-footer-fg-color: rgb(32, 32, 32);
+    --md-footer-bg-color--dark: white;
+    --md-footer-fg-color--lighter: rgb(32, 32, 32);
+    --md-footer-fg-color--light: rgb(32, 32, 32);
+    --mdc-typography-headline6-font-family: 'Be Vietnam', sans-serif;
+    --mdc-typography-font-family: 'Be Vietnam', sans-serif;
+    --md-typeset-a-color: rgb(12, 240, 190);
+}
+
+/* ====== IMAGE FIXES ====== */
+
+/* Fix 1: Make ALL regular images full width by default */
+img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+
+/* Fix 2: Target Material theme specifically */
+.md-typeset img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+
+/* Fix 3: Override for project card images - keep them square */
+.md-typeset .project-card img {
+    width: 100% !important;
+    height: 100% !important; /* Keep square aspect ratio */
+    object-fit: cover !important;
+    object-position: center !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* ====== HEADING FIXES ====== */
+/* Hide auto-generated page titles from MkDocs */
+.md-typeset h1:first-of-type:not(.custom-title) {
+    display: none !important;
+}
+
+/* Style custom titles only */
+h1.custom-title {
+    display: block !important;
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    color: #2d5f4f !important;
+    margin-bottom: 2rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+}
+
+/* ====== PROJECT CARD STYLING ====== */
+/* Ensure project card container is square */
+.md-typeset .project-card {
+    aspect-ratio: 1 !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+.md-typeset .project-card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+    z-index: 10 !important;
+}
+
+.md-typeset .project-card a {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    color: transparent !important;
+}
+
+/* ====== PROJECT GRID LAYOUT ====== */
+.md-typeset .project-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 20px !important;
+    margin: 3rem 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media screen and (max-width: 1200px) {
+    .md-typeset .project-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .md-typeset .project-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .md-typeset .project-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+    
+    h1.custom-title {
+        font-size: 3rem !important;
+    }
+}
+
+/* ====== UTILITY CLASSES ====== */
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.cardContent {
+    padding: 16px;
+    font-size: 16px;
+    color: rgb(32, 32, 32);
+}
+
+/* ====== TYPOGRAPHY ====== */
+.md-typeset h2 {
+    font-weight: 500;
+}
+
+.mdc-typography--body2 {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.md-typeset .md-button--primary {
+    border-width: 1px;
+    border-color: rgb(219, 219, 219);
+    border-radius: 4px;
+}
+
+/* ====== LAYOUT FIXES ====== */
+/* Hide left sidebar on all pages */
+.md-sidebar.md-sidebar--primary {
+    display: none !important;
+}
+
+.md-content {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+}
+
+.md-main__inner {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none !important;
+    }
+}
+
+/* ====== CLEANUP ====== */
+.md-typeset .project-card,
+.md-typeset .project-card * {
+    box-sizing: border-box !important;
+}
+
+/* Ensure images in content areas are centered */
+.md-typeset img:not(.project-card img) {
+    margin: 1.5rem auto !important;
+}
