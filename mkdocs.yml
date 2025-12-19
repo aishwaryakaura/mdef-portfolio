@@ -5,6 +5,7 @@ copyright: Copyright &copy; 2024 Aishwarya Kaura
 repo_name: mdef-portfolio
 repo_url: https://github.com/aishwaryakaura/mdef-portfolio
 
+# Navigation
 nav:
   - Home: index.md
   - About: 
@@ -12,27 +13,14 @@ nav:
   - Projects: projects.md
   - Reflections: reflections.md
 
-# Add this to control how page titles are displayed
+# Important settings
 use_directory_urls: true
-nav_title: ""
 
+# Theme configuration
 theme:
   name: material
-  # Add this to hide the site name in the header if needed
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - search.highlight
-    - search.suggest
-    - toc.integrate
-    - navigation.indexes  # This helps with folder navigation
-    # Hide the site name in header if it's appearing
-    # - header.autohide  # Uncomment if needed
-
-  # Optional: Customize the navigation style
-  navigation_depth: 2
   
+  # Color palette
   palette:
     - scheme: default
       primary: green
@@ -41,16 +29,28 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: green
+      primary: white
       accent: light blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   
+  # Font settings
   font:
     text: Roboto
     code: Roboto Mono
+  
+  # Theme features
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - navigation.indexes
 
+# Markdown extensions
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -58,13 +58,14 @@ markdown_extensions:
   - codehilite
   - pymdownx.superfences
   - pymdownx.details
-  # Add this extension for better title control
   - meta
 
+# Plugins
 plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
 
+# Extra CSS
 extra_css:
   - stylesheets/extra.css
