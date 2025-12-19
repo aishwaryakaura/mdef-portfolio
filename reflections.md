@@ -3,6 +3,7 @@ hide:
   - toc
 ---
 
+# REFLECTIONS
 
 <div class="project-grid" markdown>
 
