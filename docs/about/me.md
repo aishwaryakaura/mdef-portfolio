@@ -1,11 +1,1 @@
-# About
-
-
-
-Trial!!!
-
-![alt text](AllCards.png)"/
-
-
-
-drew3qAxsdew32q SW321       ``      `11
+![alt text](aboutme.png)
