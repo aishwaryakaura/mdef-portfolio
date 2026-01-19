@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# PROJECTS
+![alt text](<TERM BANNERS-04.png>)
 
 <div class="project-grid" markdown>
 
@@ -59,12 +59,32 @@ hide:
 [![](images/project8.png)](project/project13.md)
 </div>
 
+
+</div>
+
+![alt text](<TERM BANNERS-05.png>)
+
+
+<div class="project-grid" markdown>
+
 <div class="project-card" markdown>
-[![](images/project9.png)](project/project14.md)
+[![](images/project1.png)](project/project14.md)
 </div>
 
 <div class="project-card" markdown>
-[![](images/project10.png)](project/project15.md)
+[![](images/project2.png)](project/project15.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project3.png)](project/project16.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project4.png)](project/project17.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project5.png)](project/project18.md)
 </div>
 
 </div>
