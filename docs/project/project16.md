@@ -1,5 +1,2 @@
 ![alt text](problematize-06.png)
-<iframe style="width: 100%; height: 920px;" 
-        src="https://youtu.be/F5_adNyCGDM" 
-        frameborder="0" 
-        allowfullscreen>
+<iframe width="100%" height="920" src="https://www.youtube.com/embed/F5_adNyCGDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
