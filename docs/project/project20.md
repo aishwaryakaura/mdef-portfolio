@@ -1,1 +1,5 @@
-project20
+![alt text](<extended intellegence-02-1.png>)
+![alt text](llm-conversation.gif)
+![alt text](<extended intellegence-03.png>)
+![alt text](narrative-oraganoid.gif)
+![alt text](<extended intellegence-04.png>)
