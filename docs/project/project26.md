@@ -1,0 +1,1 @@
+![alt text](<COGNITIVE ORGIES iii.png>)

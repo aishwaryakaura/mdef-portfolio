@@ -107,4 +107,24 @@ hide:
 [![](images/project5.png)](project/project23.md)
 </div>
 
+<div class="project-card" markdown>
+[![](images/project1.png)](project/project24.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project2.png)](project/project25.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project3.png)](project/project26.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project4.png)](project/project27.md)
+</div>
+
+<div class="project-card" markdown>
+[![](images/project5.png)](project/project28.md)
+</div>
+
 </div>
